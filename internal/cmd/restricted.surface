@@ -1,0 +1,338 @@
+# The only commands and flags hey-gordy keeps, one `.surface` line per entry.
+#
+# hey-gordy is the restricted build an agent reaches over SSH. It reads mail,
+# organizes it, and writes drafts; it never sends, forwards, shares, screens,
+# or touches credentials. Anything upstream adds is excluded until listed here.
+# Global flags are `hey --<flag>` lines.
+hey
+hey --agent
+hey --count
+hey --html
+hey --ids-only
+hey --json
+hey --markdown
+hey --quiet
+hey --stats
+hey --styled
+hey --version
+hey account
+hey account list
+hey account senders
+hey attachment
+hey attachment list
+hey attachment list --allow-partial
+hey attachment get
+hey box
+hey box --all
+hey box --limit
+hey box --page
+hey box list
+hey box list --all
+hey box list --limit
+hey box view
+hey box view --all
+hey box view --limit
+hey box view --page
+hey bubble
+hey bubble list
+hey bubble list --all
+hey bubble list --limit
+hey bubble pop
+hey bubble up
+hey bubble up --next-week
+hey bubble up --now
+hey bubble up --on
+hey bubble up --tomorrow
+hey bubble up --weekend
+hey bundle
+hey bundle --all
+hey bundle --limit
+hey bundle --page
+hey bundle view
+hey bundle view --all
+hey bundle view --limit
+hey bundle view --page
+hey collection
+hey collection --all
+hey collection --limit
+hey collection --page
+hey collection add
+hey collection add --to
+hey collection create
+hey collection create --summary
+hey collection list
+hey collection list --all
+hey collection list --limit
+hey collection remove
+hey collection remove --from
+hey collection update
+hey collection update --name
+hey collection update --summary
+hey collection view
+hey collection view --all
+hey collection view --limit
+hey collection view --page
+hey habit
+hey habit complete
+hey habit complete --date
+hey habit create
+hey habit create --color
+hey habit create --days
+hey habit create --icon
+hey habit create --name
+hey habit delete
+hey habit edit
+hey habit edit --color
+hey habit edit --days
+hey habit edit --icon
+hey habit edit --name
+hey habit list
+hey habit list --all
+hey habit list --date
+hey habit list --limit
+hey habit uncomplete
+hey habit uncomplete --date
+hey journal
+hey journal list
+hey journal list --all
+hey journal list --calendar
+hey journal list --ends-on
+hey journal list --limit
+hey journal list --starts-on
+hey journal read
+hey journal write
+hey journal write --content
+hey journal write --content-html
+hey label
+hey label --all
+hey label --limit
+hey label --page
+hey label add
+hey label add --to
+hey label create
+hey label list
+hey label list --all
+hey label list --limit
+hey label remove
+hey label remove --from
+hey label view
+hey label view --all
+hey label view --limit
+hey label view --page
+hey search
+hey search --all
+hey search --any
+hey search --attachment
+hey search --date
+hey search --exact
+hey search --from
+hey search --in
+hey search --label
+hey search --none
+hey search --page
+hey search --required
+hey search --subject
+hey search --to
+hey search filters
+hey set-aside
+hey set-aside group
+hey set-aside group add
+hey set-aside group add --to
+hey set-aside group create
+hey set-aside group delete
+hey set-aside group list
+hey set-aside group remove
+hey set-aside group view
+hey set-aside group view --all
+hey set-aside group view --limit
+hey set-aside group view --page
+hey set-aside view
+hey set-aside view --all
+hey set-aside view --limit
+hey set-aside view --page
+hey todo
+hey todo add
+hey todo add --date
+hey todo add --title
+hey todo complete
+hey todo delete
+hey todo list
+hey todo list --all
+hey todo list --calendar
+hey todo list --ends-on
+hey todo list --limit
+hey todo list --starts-on
+hey todo uncomplete
+hey workflow
+hey workflow add
+hey workflow add --stage
+hey workflow add --to
+hey workflow create
+hey workflow delete
+hey workflow list
+hey workflow list --all
+hey workflow list --limit
+hey workflow move
+hey workflow move --to
+hey workflow move --workflow
+hey workflow remove
+hey workflow remove --from
+hey workflow stage
+hey workflow stage create
+hey workflow stage delete
+hey workflow stage update
+hey workflow stage update --name
+hey workflow update
+hey workflow update --name
+hey workflow view
+hey calendar
+hey calendar list
+hey clip
+hey clip create
+hey clip create --content
+hey clip delete
+hey clip list
+hey commands
+hey ignore
+hey seen
+hey spam
+hey stop-ignoring
+hey trash
+hey unseen
+hey version
+hey move
+hey move --to
+hey compose
+hey compose --bcc
+hey compose --cc
+hey compose --draft
+hey compose --from
+hey compose --message
+hey compose --message-html
+hey compose --no-name-tag
+hey compose --subject
+hey compose --thread-id
+hey compose --to
+hey reply
+hey reply --bcc
+hey reply --cc
+hey reply --draft
+hey reply --dry-run
+hey reply --message
+hey reply --message-html
+hey reply --replace-recipients
+hey reply --to
+hey contact
+hey contact bundle
+hey contact hide
+hey contact list
+hey contact list --all
+hey contact list --page
+hey contact note
+hey contact note delete
+hey contact note set
+hey contact note set --note
+hey contact note set --note-html
+hey contact note show
+hey contact show
+hey contact show-again
+hey contact threads
+hey contact threads --all
+hey contact threads --limit
+hey contact threads --page
+hey contact unbundle
+hey draft
+hey draft delete
+hey draft edit
+hey draft edit --bcc
+hey draft edit --cc
+hey draft edit --from
+hey draft edit --message
+hey draft edit --message-html
+hey draft edit --subject
+hey draft edit --to
+hey draft list
+hey draft list --all
+hey draft list --limit
+hey draft list --page
+hey draft show
+hey event
+hey event add
+hey event add --all-day
+hey event add --calendar
+hey event add --circle
+hey event add --countdown
+hey event add --countdown-unit
+hey event add --end-time
+hey event add --ends-on
+hey event add --link
+hey event add --location
+hey event add --notes
+hey event add --remind
+hey event add --repeat
+hey event add --repeat-times
+hey event add --repeat-until
+hey event add --start-time
+hey event add --starts-on
+hey event add --time-zone
+hey event add --title
+hey event day
+hey event day --all
+hey event day --limit
+hey event delete
+hey event delete --apply-to
+hey event delete --occurrence
+hey event edit
+hey event edit --all-day
+hey event edit --allow-plain-notes
+hey event edit --apply-to
+hey event edit --calendar
+hey event edit --circle
+hey event edit --countdown
+hey event edit --countdown-unit
+hey event edit --end-time
+hey event edit --ends-on
+hey event edit --link
+hey event edit --location
+hey event edit --notes
+hey event edit --occurrence
+hey event edit --remind
+hey event edit --repeat
+hey event edit --repeat-times
+hey event edit --repeat-until
+hey event edit --start-time
+hey event edit --starts-on
+hey event edit --time-zone
+hey event edit --title
+hey event list
+hey event list --all
+hey event list --calendar
+hey event list --ends-on
+hey event list --limit
+hey event list --starts-on
+hey event week
+hey event week --all
+hey event week --limit
+hey thread
+hey thread read
+hey thread read --allow-partial
+hey timetrack
+hey timetrack categories
+hey timetrack category
+hey timetrack category create
+hey timetrack category delete
+hey timetrack category rename
+hey timetrack current
+hey timetrack delete
+hey timetrack edit
+hey timetrack edit --category
+hey timetrack edit --end
+hey timetrack edit --notes
+hey timetrack edit --start
+hey timetrack list
+hey timetrack list --all
+hey timetrack list --category
+hey timetrack list --limit
+hey timetrack start
+hey timetrack stop
+hey timetrack stop --category

@@ -211,6 +211,11 @@ func appendSenderNameTag(ctx context.Context, message string) (string, error) {
 
 // writeDraftSaved confirms a saved draft, naming the id every draft verb takes.
 func writeDraftSaved(cmd *cobra.Command, draftID int64, attachments int) error {
+	if draftSavedHook != nil {
+		if err := draftSavedHook(draftID); err != nil {
+			return err
+		}
+	}
 	summary := sentWithAttachmentsSummary("Draft saved", attachments)
 	return writeMutationLine(cmd, fmt.Sprintf("%s (id %d).", summary, draftID), summary,
 		map[string]any{"id": draftID},
